@@ -63,35 +63,32 @@
           method="post">
         <div>
             <label for="title">Title</label>
-            <input type="text" th:field="*{title}"
+            <input type="text"
                         id="title" placeholder="Title" />
         </div>
         <div>
             <label for="description">Description</label>
-            <input type="text" th:field="*{description}"
+            <input type="text" 
                         id="description" placeholder="Description" />
         </div>
         <div>
             <label for="price">Price</label>
-            <input type="text" th:field="*{price}"
+            <input type="text" 
                         id="price" placeholder="$" />
         </div>
 
         <div>
             <label for="sku">SKU</label>
-            <input type="text" th:field="*{sku}"
+            <input type="text" 
                    id="sku" placeholder="SKU" />
         </div>
-
         <div>
             <label for="quantity">Quantity</label>
-            <input type="text" th:field="*{quantity}"
+            <input type="text" 
                    id="quantity" placeholder="Quantity" />
         </div>
 
-        <input type="hidden" id="user_id" name="user_id" th:value="${user.id}">
-        <input type="hidden" id="id" name="id" th:value="${product.id}">
-
+     
         <div>
             <input type="submit" value=" Save ">
         </div>

@@ -60,11 +60,11 @@
           </nav>
 
           <form method="POST">
-            <div><label> Name: <input type="text" th:field="*{username}" name="username"/> </label></div>
-            <div><label> Email: <input type="text" th:field="*{email}" name="email"/> </label></div>
-            <div><label> Password: <input type="password" th:field="*{password}" name="password"/> </label></div>
+            <div><label> Name: <input type="text" name="username"/> </label></div>
+            <div><label> Email: <input type="text" name="email"/> </label></div>
+            <div><label> Password: <input type="password" name="password"/> </label></div>
             <div><label> Retype Password: <input type="password" name="retype_password"/> </label></div>
-            <input type="hidden" th:value="user" th:attr="name='userType'"/>
+          
         
             <div><input type="submit" value="New User"/></div>
         </form>
