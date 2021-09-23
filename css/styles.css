@@ -1,0 +1,12 @@
+.aboutphoto{
+    padding-top: 5%;
+   padding-right: 5%;
+   padding-bottom: 5%;
+   width: 450px;
+   height:auto;
+}
+
+.aboutpara {
+display: block;
+margin: auto;
+text-align: center;}
