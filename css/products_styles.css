@@ -14,17 +14,9 @@
     /* object-fit: cover; */
 }
 
-.scrolling-wrapper {
-    overflow-x: scroll;
-    /* overflow-y: hidden;
-    white-space: nowrap; */
-}
-
-.listing {
-    display: inline-block;
-}
 
 .card{
-    display: block;
+    min-width: 500px;
+    width: 600px;
 }
 
