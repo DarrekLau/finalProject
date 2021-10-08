@@ -5,82 +5,148 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/homepg-style(francis).css">
+
   <title>Spot for Wellness</title>
+
 </head>
 
 <body>
   <main>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-            <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li> -->
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger" type="submit">Search</button>
-          </form>
-        </div>
+
+    <div class="icon-bar">
+      <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+      <a href="about.html"><i class="fa fa-child"></i></a>
+      <a href="products.html"><i class="fa fa-gift"></i></a>
+      <a href="#"><i class="fa fa-cart-plus"></i></a>
+      <a href="contacts.html"><i class="fa fa-globe"></i></a>
+      <a href="faq.html"><i class="fa fa-question-circle"></i></a>
+    </div>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid" id="navbar">
+        <span class="navbar-text">
+          <a class="nav-link active" aria-current="page" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="products.html">Shop</a>
+          <a class="nav-link" href="#">Cart</a>
+          <a class="nav-link" href="contacts.html">Contacts</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </span>
       </div>
-    </nav>
-    <div class="container">
+    </nav> -->
+    <div class="container-fluid" id="section1">
       <div class="row">
-        <div class="col-6">
-          <img src="resources/logo.png" width="100%">
+        <div class="col">
+          <img class="logo" src="resources/logo.png" width="90%">
         </div>
-        <div class="col-6">
-          <h5>Welcome to a Spot for Wellness!</h5>
-          <p>Our company provides a variety of wellness packages, ranging from basic health screening to specially
-            curated health and wellness packages. We work with a certified and experienced health and wellness
+        <div class="col">
+          <h3>Welcome to a Spot for Wellness!</h3>
+          <p class="p1">We provide a variety of wellness packages, from basic health screening to
+            curated wellness packages. We work with certified and experienced health and wellness
             professionals to provide you with the best services and experience. </p>
-        </div>
-        <div>
-          <h2 class="header">Why Wellness?</h2>
-          <p>Our company provides a variety of wellness packages, ranging from basic health screening to specially
-          curated health and wellness packages. We work with a certified and experienced health and wellness
-          professionals to provide you with the best services and experience.</p>
         </div>
       </div>
     </div>
+    <div class="container-fluid" id="section2">
+      <div class="row">
+        <div class="col">
+          <h3 class="header">Why Wellness?</h3>
+          <p class="p1">Wellness encompasses more than just physical health but also includes mental and spiritual well-being.<br> With
+            COVID-19 wreaking havoc across the globe and remote working / home-based schooling becoming the norm, mental
+            health has become more critical for everyone regardless of whether you are a busy professional, student or
+            home-maker.<br> Let us help you stay healthy and happy! </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="section3">
+      <h3 class="header2">Hear from our customers...</h3>
+      <div class="row">
+        <!-- <div class="col-4">
+          <img src="resources/professional.jpeg" id="test" width="46%">
+
+          <div class="text">
+            <h6>LUCY NG</h6>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco" </p>
+          </div>
+        </div> -->
+        <div class="col-6">
+          <img src="resources/family.jpeg" width="100%">
+        </div>
+        <div class="col-6">
+            <h6>JOHN and ANNE, parents with two young children</h6>
+            <p class="p1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco" </p>
+          
+        </div>
+
+        <!-- </div>
+        <div class="col-4">
+          <img src="resources/seniors.jpeg" id="test" width="90%">
+
+          <div class="text">
+            <h6>TOM and MARY</h6>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco" </p>
+          </div>
+        </div> -->
+
+      </div>
+      <div class="container-fluid" id="section4">
+        <h3 class="header3">Shop Wellness Packages</h3>
+        <div class="row">
+          <div class="col-4">
+            <a href="products.html">
+              <img src="resources/hs.jpg" width="90%">
+            </a>
+            <p style="text-align: center; padding-top: 16px">HEALTH & MEDICAL</p>
+          </div>
+          <div class="col-4">
+            <a href="products.html">
+              <img src="resources/food.jpg" width="90%">
+            </a>
+            <p style="text-align: center; padding-top: 16px">DIET & NUTRITION</p>
+          </div>
+          <div class="col-4">
+            <a href="products.html">
+              <img src="resources/spa.jpg" width="100%">
+            </a>
+            <p style="text-align: center; padding-top: 16px">REST & RELAXATION</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container-fluid" id="section5">
+      <div class="row">
+        <div class="col-6" id="payment">
+          <p>Certified payment portals:</p>
+          <img src="resources/paypal.png" width="20%">
+          <img src="resources/master.png" width="20%">
+          <img src="resources/visa.png" width="20%">
+        </div>
+        <div class="col-6" id="social">
+          <p>Follow us on social media:</p>
+          <a href="http://www.facebook.com"><img src="resources/fb.png" width="15%"></a>
+          <a href="http://www.instagram.com"><img src="resources/insta.jpeg" width="15%"></a>
+        </div>
+      </div>
+    </div>
+    
+    <footer id="footer">
+      <br>
+      <p style="text-align: center">18 Cross Street #11-08 Cross Street Exchange, S(048423)</p>
+      <br>
+    </footer>
   </main>
 
 </body>

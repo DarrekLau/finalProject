@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.icon-bar {
+    background-color: rgb(165, 206, 245);
+    width: 100%;
+    position: fixed;
+   
+}
+.icon-bar a {
+    float: left;
+    text-align: center; 
+    width: 16%; 
+    padding: 12px, 0;
+    transition: all 0.3s ease; 
+    color: white;
+    font-size: 24px; 
+}
+  
+.icon-bar a:hover {
+    background-color: #000; 
+}
+.active {
+    background-color: rgb(11, 133, 240); 
+}
+/* #navbar {
+    background-color: rgb(165, 206, 245);
+    position: fixed;
+    padding-top: 32px;
+    justify-content: center;
+}
+.navbar-text {
+    display: flex;
+} */
+
+.logo {
+    padding-bottom: 32px; 
+}
+.p1 {
+    font-family: cursive;
+}
+#section1 {
+    background-color: aliceblue;
+    padding-top: 64px;
+}
+#section2 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.header {
+    text-align: center;
+    padding-top: 16px;
+    color: rgb(103, 103, 103);
+}
+#section3 {
+    background-color: aliceblue;
+    padding-bottom: 16px;
+}
+.header2 {
+    text-align:center;
+    color: rgb(103, 103, 103);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.text {
+    text-align: center;
+    padding-top: 16px;
+}
+#section4 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+}
+.header3 {
+    text-align:center;
+    color: rgb(103, 103, 103);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#button {
+    background-color: gray;
+    color: white;
+    align-content: center;
+}
+#section5 {
+    background-color: aliceblue;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+#payment {
+    padding-left: 16px;
+}
+#social {
+   text-align: end;
+}
+#footer {
+    background-color: rgb(165, 206, 245);
+}
