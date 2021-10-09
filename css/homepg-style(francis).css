@@ -6,7 +6,7 @@
     background-color: rgb(165, 206, 245);
     width: 100%;
     position: fixed;
-   
+    z-index: 2;
 }
 .icon-bar a {
     float: left;
@@ -44,6 +44,10 @@
     background-color: aliceblue;
     padding-top: 112px;
 }
+#section1-1 {
+    background-color: aliceblue;
+
+}
 #section2 {
     background-color: rgb(227, 240, 252);
     padding-bottom: 16px;
@@ -53,7 +57,13 @@
 .header {
     text-align: center;
     padding-top: 16px;
-    color: rgb(103, 103, 103);
+}
+.carousel-inner {
+    padding-bottom: 24px;
+}
+.carousel-item {
+    background-color: rgb(165, 206, 245);
+    text-align: center;
 }
 #section3 {
     background-color: aliceblue;
@@ -61,7 +71,6 @@
 }
 .header2 {
     text-align:center;
-    color: rgb(103, 103, 103);
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -75,7 +84,6 @@
 }
 .header3 {
     text-align:center;
-    color: rgb(103, 103, 103);
     padding-top: 16px;
     padding-bottom: 16px;
 }
