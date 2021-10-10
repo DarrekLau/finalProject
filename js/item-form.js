@@ -12,21 +12,32 @@ newItemForm.addEventListener('submit', (event) => {
     // Select the inputs
     const newItemName = document.querySelector('#newItemName');
     const newItemDescription = document.querySelector('#newItemDescription');
-    const newItemImageUrl = document.querySelector('#newItemImageUrl');    
+    const newItemPrice = document.querySelector('#newItemPrice');
+    const newItemType = document.querySelector('input[type=radio][name=newItemType]:checked');
+    const newItemImage = document.querySelector('#newItemImage');    
 
     // Get the values of the inputs
     const name = newItemName.value;
     const description = newItemDescription.value;
-    const imageUrl = newItemImageUrl.value;
+    const price = newItemPrice.value;
+    const itemtype = newItemType.value;
+    const image = newItemImage.value;
+
+    // testing output
+    console.log(newItemType)
+    console.log(itemtype)
 
     /*
         Validation code here
     */
 
     // Add the item to the ItemsController
-    itemsController.addItem(name, description, imageUrl);
+    itemsController.addItem(name, description, price, itemtype, image);
 
     // Clear the form
-    newItemName.value = '';
-    newItemDescription.value = '';    
+    // newItemName.value = '';
+    // newItemDescription.value = '';
+    // newItemPrice.value = ''
+    document.querySelector('#newItemForm').reset();
+      
 });
