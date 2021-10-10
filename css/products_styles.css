@@ -42,7 +42,13 @@
 
 .card{
     margin-left: 15px;
-} 
+}
+
+.cardTest{
+    margin-left: 15px;
+    min-width: 350px;
+    width: 100%;
+}
 
 .card-text{
     height: 150px;
