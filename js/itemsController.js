@@ -6,19 +6,24 @@ class ItemsController {
     }
 
     // Create the addItem method
-    addItem(name, description, price, imageUrl) {
+    addItem(name, description, price, itemtype, image) {
         const item = {
             // Increment the currentId property
             id: this.currentId++,
             name: name,
             description: description,
             price: price,
-            imageUrl: imageUrl
+            itemtype: itemtype,
+            image: image
         };
 
         // Push the item to the items property
         this.items.push(item);
         localStorage.setItem("items", JSON.stringify(this.items));
-            }
+        // view item stored into local storage
+        console.log(this.items)
+    }
 }
+
+
 
