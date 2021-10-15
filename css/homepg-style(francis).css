@@ -42,14 +42,15 @@
 }
 #section1 {
     background-color: aliceblue;
+    background-image: url("/resources/happy.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
     padding-top: 112px;
 }
 
 #section2 {
     background-color: rgb(227, 240, 252);
-    background-image: url("/resources/happy.jpeg");
-    background-repeat: no-repeat;
-    background-size:cover;
+
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
