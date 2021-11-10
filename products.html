@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -15,8 +19,8 @@
 
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- <header> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid ">
         <a class="navbar-brand" href="index.html" >
           <img class = "navlogo" src="resources/logo.png" alt="logo"> 
@@ -43,7 +47,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Help</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
@@ -58,12 +62,20 @@
             <!-- <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li> -->
-          </ul>
+          <!-- </ul>
         </div>
       </div>
     </nav>
-  </header>
+  </header> -->
   <main>  
+    <div class="icon-bar">
+      <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+      <a href="about.html"><i class="fa fa-child"></i></a>
+      <a href="products.html"><i class="fa fa-gift"></i></a>
+      <a href="#"><i class="fa fa-cart-plus"></i></a>
+      <a href="contacts.html"><i class="fa fa-globe"></i></a>
+      <a href="item_form.html"><i class="fa fa-briefcase"></i></a>
+    </div>
     <!-- product listing starts here-->
     <!-- Health and Medical -->
     <section class="container-fluid section-listing-top"> 
@@ -251,15 +263,16 @@
 <div class="container-fluid" id="section5">
   <div class="row">
     <div class="col-6" id="payment">
-      <p>Certified payment portals:</p>
-      <img src="resources/paypal.png" width="15%">
-      <img src="resources/master.png" width="15%">
-      <img src="resources/visa.png" width="15%">
+      <p>Certified & secure</p>
+      <i class="fa fa-cc-paypal" style="font-size: 36px"></i>
+      <i class="fa fa-cc-mastercard" style="font-size: 36px"></i>
+      <i class="fa fa-cc-visa" style="font-size: 36px"></i>
     </div>
     <div class="col-6" id="social">
-      <p>Follow us on social media:</p>
-      <a href="http://www.facebook.com"><img src="resources/fb.png" width="10%"></a>
-      <a href="http://www.instagram.com"><img src="resources/insta.jpeg" width="10%"></a>
+      <p>Follow us</p>
+      <i class="fa fa-facebook-official" style="font-size: 36px;"></i>
+      <i class="fa fa-twitter" style="font-size: 36px;"></i>
+      <i class="fa fa-instagram" style="font-size: 36px;"></i>
     </div>
   </div>
 </div>
