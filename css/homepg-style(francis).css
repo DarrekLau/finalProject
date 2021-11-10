@@ -47,7 +47,7 @@
 
 #section2 {
     background-color: rgb(227, 240, 252);
-    background-image: url(/resources/happy.jpeg);
+    background-image: url("happy.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     padding-bottom: 16px;
