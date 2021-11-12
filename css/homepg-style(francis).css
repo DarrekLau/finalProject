@@ -6,7 +6,7 @@
     background-color: rgb(165, 206, 245);
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 .icon-bar a {
     float: left;
@@ -36,8 +36,8 @@
 
 .logo {
     padding-bottom: 32px;
-    
 }
+
 .p1 {
     font-family: cursive;
 }
