@@ -50,13 +50,10 @@
 
 #section2 {
     background-color: rgb(227, 240, 252);
-<<<<<<< HEAD
-    background-image: url("happy.jpeg");
+    /* background-image: url("happy.jpeg");
     background-repeat: no-repeat;
-    background-size:cover;
-=======
+    background-size:cover; */
 
->>>>>>> 8bfe58b673c2d2437aea17772f9073a649109709
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
