@@ -6,12 +6,12 @@
     background-color: rgb(165, 206, 245);
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 .icon-bar a {
     float: left;
     text-align: center; 
-    width: 16%; 
+    width: 20%; 
     padding: 16px;
     transition: all 0.3s ease; 
     color: white;
@@ -19,7 +19,7 @@
 }
   
 .icon-bar a:hover {
-    background-color: #000; 
+    background-color: rgb(11, 133, 240);
 }
 .active {
     background-color: rgb(11, 133, 240); 
@@ -34,10 +34,11 @@
     display: flex;
 } */
 
-.logo {
-    padding-bottom: 32px;
+.p1-1 {
+    color: whitesmoke;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
 }
-
 .p1 {
     font-family: cursive;
 }
@@ -46,18 +47,13 @@
     background-image: url("/resources/happy.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 112px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 #section2 {
     background-color: rgb(227, 240, 252);
-    /* background-image: url("happy.jpeg");
-    background-repeat: no-repeat;
-    background-size:cover; */
-
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-block: 24px;
 }
 .header {
     text-align: center;
@@ -72,7 +68,6 @@
 }
 #section3 {
     background-color: aliceblue;
- 
 }
 .header2 {
     text-align:center;
@@ -99,6 +94,11 @@
 }
 #section5 {
     background-color: aliceblue;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+#section6 {
+    background-color: rgb(165, 206, 245);
     padding-top: 16px;
     padding-bottom: 24px;
 }
