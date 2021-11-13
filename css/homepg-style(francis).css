@@ -47,13 +47,13 @@
     background-image: url("/resources/happy.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 60px;
+    padding-bottom: 8px;
 }
 
 #section2 {
     background-color: rgb(227, 240, 252);
-    padding-block: 24px;
+    padding-bottom: 16px;
 }
 .header {
     text-align: center;
@@ -112,7 +112,4 @@
 #footer {
     background-color: rgb(165, 206, 245);
     padding-bottom: 5px;
-}
-#founders {
-    padding-block: 16px;
 }
