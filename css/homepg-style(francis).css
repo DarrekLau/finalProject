@@ -17,7 +17,7 @@
     color: white;
     font-size: 32px; 
 }
-  
+
 .icon-bar a:hover {
     background-color: rgb(11, 133, 240);
 }
@@ -34,26 +34,33 @@
     display: flex;
 } */
 
-.p1-1 {
-    color: whitesmoke;
-    font-family: cursive;
-    text-shadow: 2px 2px black;
-}
+/* .p1-1 {
+    color: pink;
+    font-family:cursive;
+    text-shadow: 1px 1px black;
+    
+} */
 .p1 {
     font-family: cursive;
+    
 }
 #section1 {
     background-color: aliceblue;
-    background-image: url("/resources/happy.jpeg");
+    background-image: url("/resources/ashley.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
-    padding-top: 60px;
+    background-size: cover;
+    padding-top: 80px;
     padding-bottom: 8px;
 }
+/* #section1-1 {
+    background-color: rgb(223, 223, 215);
+    padding-bottom: 16px;
+} */
 
 #section2 {
     background-color: rgb(227, 240, 252);
     padding-bottom: 16px;
+    padding-top: 16px; 
 }
 .header {
     text-align: center;
