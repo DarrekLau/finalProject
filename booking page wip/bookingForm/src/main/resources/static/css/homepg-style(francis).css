@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.icon-bar {
+    background-color: rgb(165, 206, 245);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+.icon-bar a {
+    float: left;
+    text-align: center; 
+    width: 20%; 
+    padding: 16px;
+    transition: all 0.3s ease; 
+    color: white;
+    font-size: 32px; 
+}
+  
+.icon-bar a:hover {
+    background-color: rgb(11, 133, 240);
+}
+.active {
+    background-color: rgb(11, 133, 240); 
+}
+/* #navbar {
+    background-color: rgb(165, 206, 245);
+    position: fixed;
+    padding-top: 32px;
+    justify-content: center;
+}
+.navbar-text {
+    display: flex;
+} */
+
+.p1-1 {
+    color: whitesmoke;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+}
+.p1 {
+    font-family: cursive;
+}
+#section1 {
+    background-color: aliceblue;
+    background-image: url("/resources/happy.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 60px;
+    padding-bottom: 8px;
+}
+
+#section2 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+}
+.header {
+    text-align: center;
+    padding-top: 16px;
+}
+.carousel-inner {
+    padding-bottom: 24px;
+}
+.carousel-item {
+    background-color: rgb(165, 206, 245);
+    text-align: center;
+}
+#section3 {
+    background-color: aliceblue;
+}
+.header2 {
+    text-align:center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.text {
+    text-align: center;
+    padding-top: 16px;
+}
+#section4 {
+    background-color: rgb(227, 240, 252);
+    padding-bottom: 16px;
+}
+.header3 {
+    text-align:center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#button {
+    background-color: gray;
+    color: white;
+    align-content: center;
+}
+#section5 {
+    background-color: aliceblue;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+#section6 {
+    background-color: rgb(165, 206, 245);
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+#payment {
+    padding-left: 16px;
+}
+#social {
+   text-align: end;
+   
+}
+#footer {
+    background-color: rgb(165, 206, 245);
+    padding-bottom: 5px;
+}
