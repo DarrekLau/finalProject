@@ -14,10 +14,10 @@ public class JwtAuthenticationController {
     private AuthenticationManager authenticationManager;
 
     @Autowired
-    private com.example.todo.security.JwtTokenUtil jwtTokenUtil;
+    private JwtTokenUtil jwtTokenUtil;
 
     @Autowired
-    private com.example.todo.security.JwtUserDetailsService jwtUserDetailsService;
+    private JwtUserDetailsService jwtUserDetailsService;
 
     @RequestMapping(value = "/authenticate",method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest){

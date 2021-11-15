@@ -1,7 +1,7 @@
 package com.example.finalproject.service;
 
 import com.example.finalproject.model.User;
-import com.example.finalproject.model.UserRepo;
+import com.example.finalproject.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,32 +11,37 @@ import java.util.Optional;
 @Service
 public class UserService implements UserServiceImpl{
 
+    UserRepo userRepo;
+
     @Autowired
-    private UserRepo userRepo;
+    public UserService(UserRepo userRepo){
+        this.userRepo= userRepo;
+    }
 
     @Override
     public void createUser(User newUser) {
-
+        userRepo.save(newUser);
     }
 
     @Override
     public Optional<User> getUser(Integer id) {
-        return Optional.empty();
+        return userRepo.findById(id);
     }
 
     @Override
     public void updateUser(User updatedUser) {
-
+        userRepo.save(updatedUser);
     }
 
     @Override
     public void deleteUser(Integer id) {
-
+        Optional<User> user = userRepo.findById(id);
+        user.ifPresent(value -> userRepo.delete(value));
     }
 
     @Override
     public List<User> getAllUsers() {
-        return null;
+        return userRepo.findAll();
     }
 
     @Override

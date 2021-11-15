@@ -3,27 +3,21 @@ package com.example.finalproject.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-
 public class User {
 
     @Id
     @GeneratedValue(strategy= GenerationType.TABLE)
+    @Column(name = "id")
     private int id;
     private String username;
     private String name;
     private String email;
 
-    public User(int id, String username, String name, String email) {
-        this.id = id;
-        this.username = username;
-        this.name = name;
-        this.email = email;
+    public User() {
+
     }
 
     public int getId() {
