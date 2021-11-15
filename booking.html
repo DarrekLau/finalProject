@@ -18,15 +18,12 @@
     <div class="icon-bar">
         <a href="index.html"><i class="fa fa-home"></i></a>
         <a href="about.html"><i class="fa fa-child"></i></a>
-        <a href="products.html"><i class="fa fa-gift"></i></a>
+        <a href="products-all.html"><i class="fa fa-gift"></i></a>
         <a class="active" href="booking.html"><i class="fa fa-calendar"></i></a>
         <a href="contacts.html"><i class="fa fa-globe"></i></a>
     </div>
-    <br>
-    <div class="container-fluid">
-            <br>
-            <br>
-            <br>
+    <div class="container-fluid" id="products">
+
         <h1>Consultation Booking Form</h1>
         <p>Please book an appointment with us for a detailed personal consultation. 
             Note that cost of consultation is approximately $50-80 per hour for a one-hour session. </p>
@@ -64,7 +61,7 @@
             <br>
             <br>
             <label>Appointment date *:</label><br>
-                <input type="text" name="arrival date" placeholder="m/d/yyyy" required="required"><br>
+                <input type="text" name="arrival date" placeholder="dd/mm/yyyy" required="required"><br>
             <br>
             <label>Appointment time *:</label><br>
                 <input type="time" name="time" required="required"><br>
@@ -74,9 +71,33 @@
                 Closed on weekends & public holidays<br>
                 </p>
             <input type="submit" value=" Complete reservation " style="font-size:20px"><br>
-            <br>
-            <p>&copy; 2021 SpotforWellness Pte Ltd. All rights reserved.</p>
+            <!-- <br>
+            <p>&copy; 2021 SpotforWellness Pte Ltd. All rights reserved.</p> -->
         </form>
+        <div class="container-fluid" id="section5">
+            <div class="row">
+              <div class="col-6" id="payment">
+                <p>Certified & secure</p>
+                <i class="fa fa-cc-paypal" style="font-size: 36px"></i>
+                <i class="fa fa-cc-mastercard" style="font-size: 36px"></i>
+                <i class="fa fa-cc-visa" style="font-size: 36px"></i>
+              </div>
+              <div class="col-6" id="social">
+                <p>Follow us</p>
+                <i class="fa fa-facebook-official" style="font-size: 36px;"></i>
+                <i class="fa fa-twitter" style="font-size: 36px;"></i>
+                <i class="fa fa-instagram" style="font-size: 36px;"></i>
+              </div>
+            </div>
+          </div>
+          <footer id="footer">
+            <br>
+            <p style="text-align: center">
+              
+              &copy; 2021 SpotforWellness Pte Ltd. All rights reserved.
+            </p>
+      
+          </footer>
     </div>
     </main>
 </body>

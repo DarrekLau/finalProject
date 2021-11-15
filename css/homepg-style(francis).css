@@ -52,10 +52,10 @@
     padding-top: 80px;
     padding-bottom: 8px;
 }
-/* #section1-1 {
-    background-color: rgb(223, 223, 215);
-    padding-bottom: 16px;
-} */
+#products {
+    background-color: aliceblue;
+    padding-top: 100px;
+}
 
 #section2 {
     background-color: rgb(227, 240, 252);
