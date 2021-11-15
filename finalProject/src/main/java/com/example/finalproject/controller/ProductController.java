@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-public class productController {
+public class ProductController {
 
     @Autowired
     ProductServiceImpl productService;
@@ -32,7 +32,7 @@ public class productController {
     @Autowired
     UserServiceImpl userService;
 
-    private static final Logger logger = LoggerFactory.getLogger(productController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
     @GetMapping(value="product-image") // it will be set to be /product
     public String productWithImage(Model model){
