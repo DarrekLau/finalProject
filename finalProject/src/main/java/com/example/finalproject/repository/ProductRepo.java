@@ -1,5 +1,6 @@
-package com.example.finalproject.model;
+package com.example.finalproject.repository;
 
+import com.example.finalproject.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

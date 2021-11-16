@@ -18,9 +18,9 @@ import java.io.IOException;
 @Service
 public class JwtRequestFilter extends OncePerRequestFilter {
     @Autowired
-    private com.example.todo.security.JwtTokenUtil jwtTokenUtil;
+    private JwtTokenUtil jwtTokenUtil;
     @Autowired
-    private com.example.todo.security.JwtUserDetailsService jwtUserDetailsService;
+    private JwtUserDetailsService jwtUserDetailsService;
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
