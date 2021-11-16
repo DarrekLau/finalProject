@@ -15,12 +15,28 @@
 </head>
 <body>
     <main>
-    <div class="icon-bar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-        <a href="about.html"><i class="fa fa-child"></i></a>
-        <a href="products-all.html"><i class="fa fa-gift"></i></a>
-        <a class="active" href="booking.html"><i class="fa fa-calendar"></i></a>
-        <a href="contacts.html"><i class="fa fa-globe"></i></a>
+    <div class="desktop-head">
+        <div class="icon-bar">
+            <a href="index.html">
+            Home</a>
+            <a href="about.html">
+            About</a>
+            <a href="products.html">
+            Products</a>
+            <a class="active" href="booking.html">
+            Booking</a>
+            <a href="contacts.html">
+            Contact</a>
+          </div>
+    </div>
+    <div class="mobile-head">
+        <div class="icon-bar">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="about.html"><i class="fa fa-child"></i></a>
+            <a href="products.html"><i class="fa fa-gift"></i></a>
+            <a class="active" href="booking.html"><i class="fa fa-calendar"></i></a>
+            <a href="contacts.html"><i class="fa fa-globe"></i></a>
+        </div>
     </div>
     <div class="container-fluid" id="products">
 
@@ -35,8 +51,8 @@
             <label>Email *:</label><br>
                 <input type="email" name="email" placeholder="email address" required="required"><br>
             <br>
-            <label>Contact no.:</label><br>
-                <input type="number" name="contact" placeholder="Contact"><br>
+            <label>Contact no.*:</label><br>
+                <input type="number" name="contact" placeholder="Contact" required="required"><br>
             <br>
             <label for="health package">Select Health & Medical Package:</label><br>
             <select id="health package" name="health package">
