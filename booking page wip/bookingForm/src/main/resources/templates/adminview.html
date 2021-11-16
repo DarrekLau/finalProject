@@ -45,8 +45,10 @@
                     <td th:text="${booking.healthMedicalPackage}" />
                     <td th:text="${booking.restRelaxationPackage}" />
                     <td th:text="${booking.dietNutritionPackage}" />
-                    <td th:text="${booking.date}" />
+                    <td th:text="${#dates.format(booking.date, 'dd-MM-yyyy')}"></td>
+<!--                    <td th:text="${booking.date}" />-->
                     <td th:text="${booking.time}" />
+
                     <td>
                         <a th:href="@{admin/update(id=${booking.id})}" ><i class="fa fa-edit" ></i></a>
                         <a th:href="@{admin/delete(id=${booking.id})}" ><i class="fa fa-remove"></i></a>
@@ -59,6 +61,9 @@
             <form th:action="@{/admin}" method="get">
                 <input type="text" name="keyword" th:value="${keyword}"  placeholder="Filter by word" size="50" >
                 <button type="submit" class="btn btn-info" >Filter</button>
+            </form>
+            <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout" />
             </form>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

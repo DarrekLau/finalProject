@@ -32,7 +32,7 @@ public class Booking {
 
     private String dietNutritionPackage;
 
-//    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date date;
 
     private String time;

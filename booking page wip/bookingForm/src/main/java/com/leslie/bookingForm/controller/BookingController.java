@@ -3,15 +3,14 @@ package com.leslie.bookingForm.controller;
 import com.leslie.bookingForm.model.Booking;
 import com.leslie.bookingForm.repository.BookingRepository;
 import com.leslie.bookingForm.service.BookingService;
+import com.leslie.bookingForm.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.mail.MessagingException;
 import java.util.List;
 
 @Controller
@@ -21,6 +20,8 @@ public class BookingController {
     private BookingRepository bookingRepository;
     @Autowired
     private BookingService bookingService;
+    @Autowired
+    private EmailService emailService;
 
     @GetMapping("/booking")
     public ModelAndView addBooking(){
@@ -32,9 +33,10 @@ public class BookingController {
     }
 
     @PostMapping("/saveBooking")
-    public String saveBooking(Booking booking) {
+    public String saveBooking(Booking booking) throws MessagingException {
         bookingService.addBooking(booking);
-        return "test"; // to be amended to homepage.etc after booking is submitted
+        emailService.sendMail(booking);
+        return "confirmation"; // to be amended to homepage.etc after booking is submitted
     }
 
 //    @GetMapping("/test")
@@ -83,6 +85,8 @@ public class BookingController {
         bookingService.deleteBooking(id);
         return "redirect:/admin";
     }
+
+
 
 
 
