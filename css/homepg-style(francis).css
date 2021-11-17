@@ -16,9 +16,8 @@
     padding: 16px;
     transition: all 0.3s ease; 
     color: white;
-    font-size: 32px; 
+    font-size: 24px; 
 }
-
 .icon-bar a:hover {
     background-color: rgb(11, 133, 240);
 }
@@ -34,7 +33,7 @@
     /* background-image: url("/resources/ashley.jpg");
     background-repeat: no-repeat;
     background-size: cover; */
-    padding-top: 80px;
+    padding-top: 64px;
     padding-left: 0px;
     padding-right: 0px;
 
