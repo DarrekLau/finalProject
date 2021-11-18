@@ -13,7 +13,7 @@
     <title>Update Booking</title>
 </head>
 <body>
-<form th:action="@{/admin/saveupdate}" th:object="${booking}" method="POST">
+<form th:action="@{/admin/saveupdate}" th:object="${booking}" method="POST" class="m-3">
     <label>Full name *:</label><br>
     <input type="text" th:field="*{fullName}" name="name" placeholder="FirstName LastName" required="required"><br>
     <br>

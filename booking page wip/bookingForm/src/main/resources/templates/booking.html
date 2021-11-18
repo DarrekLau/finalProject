@@ -44,6 +44,7 @@
             <br>
             <label for="health package">Select Health & Medical Package:</label><br>
             <select id="health package" th:field="*{healthMedicalPackage}" name="health package">
+                <option value="null" selected>Nil</option>
                 <option value="Raffles" selected>Raffle Medical: Health Deluxe Plus</option>
                 <option value="Fullerton">Fullerton Health: Live Life Fuller</option>
                 <option value="Healthway">Healthway Medical: Elite Package</option>
@@ -51,6 +52,7 @@
             <br>
             <label for="rest package">Select Rest & Relaxation Package:</label><br>
             <select id="rest package" th:field="*{restRelaxationPackage}" name="rest package">
+                <option value="null" selected>Nil</option>
                 <option value="Banyan" selected>Banyan Tree: Royal Banyan</option>
                 <option value="Ikeda">Ikeda Spa: Just for Her</option>
                 <option value="Kenko">Ikeda Spa: Just for Him</option>
@@ -58,6 +60,7 @@
             <br>
             <label for="diet package">Select Diet & Nutrition Package:</label><br>
             <select id="diet package" th:field="*{dietNutritionPackage}" name="diet package">
+                <option value="null" selected>Nil</option>
                 <option value="kkh" selected>KKH Services</option>
                 <option value="gleneagles">Gleneagles Hospital Services</option>
                 <option value="sgh">SGH Services</option>
