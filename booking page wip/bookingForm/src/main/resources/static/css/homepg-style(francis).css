@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .icon-bar {
     background-color: rgb(165, 206, 245);
     width: 100%;
@@ -11,49 +12,41 @@
 .icon-bar a {
     float: left;
     text-align: center; 
+    text-decoration: none;
     width: 20%; 
     padding: 16px;
     transition: all 0.3s ease; 
     color: white;
-    font-size: 32px; 
+    font-size: 24px; 
 }
-  
 .icon-bar a:hover {
     background-color: rgb(11, 133, 240);
 }
 .active {
     background-color: rgb(11, 133, 240); 
 }
-/* #navbar {
-    background-color: rgb(165, 206, 245);
-    position: fixed;
-    padding-top: 32px;
-    justify-content: center;
-}
-.navbar-text {
-    display: flex;
-} */
-
-.p1-1 {
-    color: whitesmoke;
-    font-family: cursive;
-    text-shadow: 2px 2px black;
-}
 .p1 {
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 16px;
 }
 #section1 {
     background-color: aliceblue;
-    background-image: url("/resources/happy.jpeg");
+    /* background-image: url("/resources/ashley.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
-    padding-top: 60px;
-    padding-bottom: 8px;
-}
+    background-size: cover; */
+    padding-top: 64px;
+    padding-left: 0px;
+    padding-right: 0px;
 
+}
+#products {
+    background-color: aliceblue;
+    padding-top: 80px;
+}
 #section2 {
     background-color: rgb(227, 240, 252);
     padding-bottom: 16px;
+    padding-top: 16px; 
 }
 .header {
     text-align: center;
@@ -94,7 +87,7 @@
 }
 #section5 {
     background-color: aliceblue;
-    padding-top: 16px;
+    padding-top: 64px;
     padding-bottom: 24px;
 }
 #section6 {
@@ -112,4 +105,63 @@
 #footer {
     background-color: rgb(165, 206, 245);
     padding-bottom: 5px;
+}
+@media only screen and (max-width: 750px) {
+    div.desktop-head {
+      display: none;
+    }
+    div.main-top{
+        display:none;
+    }
+    /* div.main-2{
+        display:none
+    }
+    div.main3{
+        display:none
+    }
+    div.main-4{
+        display:none
+    } */
+    /* nav.footer-end-1{
+        display:none
+    }
+    .footer-end{
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 24px;
+    } */
+}
+@media only screen and (min-width: 750px) {
+    div.mobile-head {
+        display: none;    
+    }
+    div.mobile-main-top {
+        display: none;    
+    }
+    /* div.main2-mobile{
+        display: none
+    }
+    div.main2-mobile-1{
+        display: none
+    }
+    div.main3-mobile{
+        display: none
+    }
+    div.main4-mobile{
+        display: none
+    } */
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
