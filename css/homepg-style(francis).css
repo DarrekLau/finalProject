@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .icon-bar {
     background-color: rgb(165, 206, 245);
     width: 100%;
@@ -40,7 +41,7 @@
 }
 #products {
     background-color: aliceblue;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 #section2 {
     background-color: rgb(227, 240, 252);
