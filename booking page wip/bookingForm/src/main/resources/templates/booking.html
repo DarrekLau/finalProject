@@ -11,6 +11,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" th:href="@{css/homepg-style(francis).css}">
+    <script type = "text/javascript" th:src="@{/js/get.js}"></script>
     <title>Spot for Wellness - Booking form</title>
 </head>
 <body>
@@ -77,9 +78,9 @@
                 <label for="diet package">Select Diet & Nutrition Package:</label><br>
                 <select id="diet package" th:field="*{dietNutritionPackage}" name="diet package">
                     <option value="null" selected>Nil</option>
-                    <option value="kkh" selected>KKH Services</option>
-                    <option value="gleneagles">Gleneagles Hospital Services</option>
-                    <option value="sgh">SGH Services</option>
+                    <option value="KKH" selected>KKH Services</option>
+                    <option value="Gleneagles">Gleneagles Hospital Services</option>
+                    <option value="SGH">SGH Services</option>
                 </select>
                 <br>
                 <br>
@@ -97,6 +98,9 @@
                 <br>
                 <p>&copy; 2021 SpotforWellness Pte Ltd. All rights reserved.</p>
             </form>
+            <script>
+                window.onload = get();
+            </script>
 
         </div>
 

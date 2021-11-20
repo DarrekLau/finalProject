@@ -26,6 +26,7 @@
 
                 <thead>
                 <tr>
+                    <th>Ref Id</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Contact No</th>
@@ -39,6 +40,7 @@
                 </thead>
                 <tbody>
                 <tr th:each="booking: ${booking}">
+                    <td th:text="${booking.id}" />
                     <td th:text="${booking.fullName}" />
                     <td th:text="${booking.email}" />
                     <td th:text="${booking.contactNo}" />
