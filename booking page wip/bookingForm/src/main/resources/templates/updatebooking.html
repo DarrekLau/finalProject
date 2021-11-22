@@ -53,7 +53,7 @@
     <input type="text" id="datepicker" th:value="${#dates.format(booking.date, 'dd-MM-yyyy')}" th:field="*{date}" name="arrival date" placeholder="dd/mm/yyyy" required="required"><br>
     <script>
         $( function() {
-        $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShowDay: $.datepicker.noWeekends, minDate: 1});
+        $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy', beforeShowDay: $.datepicker.noWeekends, minDate: -1});
         } );
     </script>
     <br>
