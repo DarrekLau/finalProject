@@ -75,8 +75,9 @@ public class BookingController {
     }
 
     @PostMapping("/admin/saveupdate")
-    public String saveUpdate(Booking booking) {
+    public String saveUpdate(Booking booking) throws MessagingException {
         bookingService.addBooking(booking);
+        emailService.sendMail(booking);
         return "redirect:/admin";
     }
 
@@ -85,6 +86,7 @@ public class BookingController {
         bookingService.deleteBooking(id);
         return "redirect:/admin";
     }
+
 
 
 
